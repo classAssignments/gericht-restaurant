@@ -13,6 +13,10 @@ import spoon from '../assets/spoon.svg';
 import welcome from '../assets/welcome.png';
 import findus from '../assets/findus.png';
 import laurels from '../assets/laurels.png';
+import appetizer from '../assets/appetizer.webp';
+import entree1 from '../assets/entree1.jpeg';
+import entree2 from '../assets/entree2.jpeg';
+import dessert from '../assets/dessert.jpeg';
 import award01 from '../assets/award01.png';
 import award02 from '../assets/award02.png';
 import award03 from '../assets/award03.png';
@@ -44,4 +48,8 @@ export default {
   sign,
   quote,
   gericht,
+  appetizer,
+  entree1,
+  entree2,
+  dessert,
 };
