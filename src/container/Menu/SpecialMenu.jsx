@@ -35,9 +35,58 @@ const SpecialMenu = () => (
       </div>
     </div>
 
+
     <div style={{marginTop: '15px'}}>
     </div>
     </div>
+
+    
+    <div className='app__specialMenu-menu_wine flex__center'>
+      <p className='app__specialMenu-menu_heading'>Appetizers</p>
+      </div>
+      <div className='left'>
+      <img src={images.appetizer} alt='appetizer img' />
+    </div>
+      <div className='app__specialMenu_menu_items'>
+        {data.appetizers.map((appetizers, index) => (
+        <MenuItem key={appetizers.title + index} title= {appetizers.title} price= {appetizers.price} tags={appetizers.tags} />
+        ))}
+      </div>
+
+      <div className='app__specialMenu-menu_wine flex__center'>
+      <p className='app__specialMenu-menu_heading'>Entrees</p>
+      </div>
+      <div className='left'>
+      <img src={images.entree1} alt='entree img' />
+    </div>
+      <div className='app__specialMenu_menu_items'>
+        {data.entreesP1.map((entree1, index) => (
+        <MenuItem key={entree1.title + index} title= {entree1.title} price= {entree1.price} tags={entree1.tags} />
+        ))}
+      </div>
+
+      <div className='left'>
+      <img src={images.entree2} alt='entree img' />
+    </div>
+      <div className='app__specialMenu_menu_items'>
+        {data.entreesP2.map((entree2, index) => (
+        <MenuItem key={entree2.title + index} title= {entree2.title} price= {entree2.price} tags={entree2.tags} />
+        ))}
+      </div>
+      
+      <div className='app__specialMenu-menu_wine flex__center'>
+      <p className='app__specialMenu-menu_heading'>Desserts</p>
+      </div>
+
+      <div className='left'>
+      <img src={images.dessert} alt='dessert img' />
+    </div>
+      <div className='app__specialMenu_menu_items'>
+        {data.desserts.map((dessert, index) => (
+        <MenuItem key={dessert.title + index} title= {dessert.title} price= {dessert.price} tags={dessert.tags} />
+        ))}
+      </div>
+    
   </div>
 );
 
